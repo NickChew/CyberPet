@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="petChoiceWrapper">
+        <h2>Choose a pet</h2>
+
+        <!-- form that handles the pet choice -->
+        <form id="form">
+
+            <!-- radios select pet choice cat/dog -->
+            <input type="radio" id="petChoice" class="choice" name="choice" value="dog" required>
+            <label for="petChoiceDog">Dog</label><br>
+
+            <input type="radio" id="petChoiceCat" class="choice" name="choice" value="cat" required>
+            <label for="petChoiceCat">Cat</label><br>
+
+            <input type="radio" id="petChoiceRabbit" class="choice" name="choice" value="rabbit" required>
+            <label for="petChoiceRabbit">Rabbit</label><br>
+
+            <input type="radio" id="petChoiceParrot" class="choice" name="choice" value="parrot" required>
+            <label for="petChoiceParrot">Parrot</label><br>
+        </br>    
+            <!-- input for pet name -->
+            <input type="text" id="petName" placeholder="pet name" required>
+            <button type="submit" id="submitBtn">Create Pet</button><br>
+
+        </form>
+
+    </div>
+
+    <!-- cyber pet game section -->
+    <div id="petWrapper">
+        <h1 id="displayPetName">Your Pet</h1>
+        <img id="ChosenPet" src="./images/cat.gif" alt="image of pet chosen" width="100" height="100"><br>
+        <p id="hungerStat">Hunger: 100</p>
+        <p id="thirstyStat">Thirsty: 100</p>
+        <p id="happyStat">Happy: 100</p>
+        <p id="message"></p>
+
+        <button id="feedBtn">Feed</button>
+        <button id="thirstBtn">Water</button>
+        <button id="specialBtn">Special</button> 
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

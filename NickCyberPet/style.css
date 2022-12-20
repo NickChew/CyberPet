@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+  }
+
+#petWrapper {
+    display: none;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+.button-container button {
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    background-color: #4783d1;
+}
+
+/* .petChoiceWrapper{
+
+} */
