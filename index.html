@@ -5,117 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cyberpet.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-<h1> --Cyber Pet-- </h1>
 
 <body>
-    <h2> Choose your Cyber Pet </h2>
 
-    <div>
-        <p1>
-            Welcome!
-            Please choose your Cyberpet!
-        </p1>
+    <div id="petChoiceWrapper">
+        <h2>Choose a pet</h2>
+
+        <!-- form that handles the pet choice -->
+        <form id="form">
+
+            <!-- radios select pet choice cat/dog -->
+            <input type="radio" id="petChoice" class="choice" name="choice" value="dog" required>
+            <label for="petChoiceDog">Dog</label><br>
+
+            <input type="radio" id="petChoiceCat" class="choice" name="choice" value="cat" required>
+            <label for="petChoiceCat">Cat</label><br>
+
+            <input type="radio" id="petChoiceRabbit" class="choice" name="choice" value="rabbit" required>
+            <label for="petChoiceRabbit">Rabbit</label><br>
+
+            <input type="radio" id="petChoiceParrot" class="choice" name="choice" value="parrot" required>
+            <label for="petChoiceParrot">Parrot</label><br>
+            <br>
+            <!-- input for pet name -->
+            <input type="text" id="petName" placeholder="pet name" required>
+            <button type="submit" id="submitBtn">Create Pet</button><br>
+
+        </form>
+
     </div>
-    <form>
-        <input type="radio" id="animalOptional" name="AnimalChoice" value="Dog" class="choice">
-        <label for="animalOptional">Dog</label>
-        <!-- goto dog section/page/class or -->
 
-        <input type="radio" id="animalOptiona2" name="AnimalChoice" value="Rabbit" class="choice">
-        <label for="animalOptiona2">Rabbit</label>
-        <!-- goto Rabbit section/page/class or -->
+    <!-- cyber pet game section -->
+    <div id="petWrapper">
+        <h1 id="displayPetName">Your Pet</h1>
+        <img src="./images/cat.gif" alt="image of pet chosen" width="300" height="300"><br>
+        <p id="hungerStat">Hunger: 100</p>
+        <p id="thirstyStat">Thirsty: 100</p>
+        <p id="happyStat">Happy: 100</p>
+        <p id="message"></p>
 
-        <input type="radio" id="animalOptiona3" name="AnimalChoice" value="Cat" class="choice">
-        <label for="animalOptiona3">Cat</label>
-        <!-- goto Cat section/page/class or -->
+        <button id="feedBtn">Feed</button>
+        <button id="thirstBtn">Water</button>
+        <!-- <button id="specialBtn">Special</button> -->
+    </div>
 
-        <input type="radio" id="animalOptiona4" name="AnimalChoice" value="Parrot" class="choice">
-        <label for="animalOptiona4">Parrot</label>
-        <!-- goto Parrot section/page/class or -->
-
-        <button id="submitBtn">Make Pet!</button>
-
-    </form>
-
-    <!-- Dog section -->
-    <section class="pet-Dog">
-        <img class="Dog" src="./Images/dog.gif" alt="picture of dog">
-    </section>
-    <section class="dashboard">
-        <div>Name: <strong><span class="name"></span></strong></div>
-        <div>Weight: <strong><span class="weight"></span>Kg</strong></div>
-        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
-        <div class="button-container">
-            <button class="treat-button">
-                Treat
-            </button>
-            <button class="play-button">
-                Play
-            </button>
-            <button class="exercise-button">
-                Exercise
-            </button>
-        </div>
-        <!-- Cat section -->
-        <section class="petCat">
-            <img class="Cat" src="./Images/cat.gif" alt="picture of cat">
-        </section>
-        <section class="dashboard">
-            <div>Name: <strong><span class="name"></span></strong></div>
-            <div>Weight: <strong><span class="weight"></span>Kg</strong></div>
-            <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
-            <div class="button-container">
-                <button class="treat-button">
-                    Treat
-                </button>
-                <button class="play-button">
-                    Play
-                </button>
-                <button class="exercise-button">
-                    Exercise
-                </button>
-            </div>
-            <!-- Rabbit section -->
-            <section class="petRabbit">
-                <img class="Rabbit" src="./Images/rabbit.gif" alt="picture of rabbit">
-            </section>
-            <section class="dashboard">
-                <div>Name: <strong><span class="name"></span></strong></div>
-                <div>Weight: <strong><span class="weight"></span>Kg</strong></div>
-                <div>Happiness: <strong><span class="happiness"></span> tail wiggles (per min)</strong></div>
-                <div class="button-container">
-                    <button class="treat-button">
-                        Treat
-                    </button>
-                    <button class="play-button">
-                        Play
-                    </button>
-                    <button class="exercise-button">
-                        Exercise
-                    </button>
-                </div>
-                <!-- Parrot section -->
-                <section class="petParrot">
-                    <img class="Parrot" src="./Images/parrot.gif" alt="picture of Parrot">
-                </section>
-                <section class="dashboard">
-                    <div>Name: <strong><span class="name"></span></strong></div>
-                    <div>Weight: <strong><span class="weight"></span>Kg</strong></div>
-                    <div>Happiness: <strong><span class="happiness"></span> wing flaps (per min)</strong></div>
-                    <div class="button-container">
-                        <button class="treat-button">
-                            Treat
-                        </button>
-                        <button class="play-button">
-                            Play
-                        </button>
-                        <button class="exercise-button">
-                            Exercise
-                        </button>
-                    </div>
-
-                    <script src="./cyberpetscript.js"> </script>
+    <script src="./script.js"></script>
 </body>
+
+</html>
